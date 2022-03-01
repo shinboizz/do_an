@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Model.EF.TinTuc>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Layout/Layout.cshtml";
+}
+
+
+ <!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Tin tức</h1>
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <p>
+                <a class="btn btn-success" href="/Admin/News/Create" role="button">Thêm mới</a>
+            </p>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.LoaiTin.TenLoaiTin)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.TieuDe)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.MoTa)
+                            </th>
+                           
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       @foreach (var item in Model)
+                       {
+                        <tr id="row_@item.MaTin">
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LoaiTin.TenLoaiTin)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TieuDe)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MoTa)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Sửa", "Edit", new { id = item.MaTin }, new { @class = "btn btn-primary" }) |
+                                @Ajax.ActionLink("Xóa", "Delete", new { @id = item.MaTin }, new AjaxOptions
+                           {
+                               Confirm = "Bạn có chắc muốn xóa",
+                               OnComplete = "$('#row_" + @item.MaTin + "').remove()",
+                               HttpMethod = "Delete"
+                           }, new { @class = "btn btn-danger" })
+                            </td>
+                        </tr>
+                       }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /.container-fluid -->

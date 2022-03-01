@@ -1,0 +1,83 @@
+﻿@model IEnumerable<Model.EF.LoaiTin>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Layout/Layout.cshtml";
+}
+
+
+
+ <!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Loại tin</h1>
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <p>
+                <a class="btn btn-success" href="/Admin/NewsCategory/Create" role="button">Thêm mới</a>
+            </p>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.TenLoaiTin)
+                            </th>
+                            @*<th>
+                                @Html.DisplayNameFor(model => model.NgayTao)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.NguoiTao)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.NgaySua)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.NguoiSua)
+                            </th>*@
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       @foreach (var item in Model)
+                       {
+                        <tr id="row_@item.MaLoaiTin">
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TenLoaiTin)
+                            </td>
+                            @*<td>
+                                @Html.DisplayFor(modelItem => item.NgayTao)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NguoiTao)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NgaySua)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NguoiSua)
+                            </td>*@
+                            <td>
+                                @Html.ActionLink("Sửa", "Edit", new { id = item.MaLoaiTin }, new { @class = "btn btn-primary" }) |                             
+                                @Ajax.ActionLink("Xóa", "Delete", new { @id = item.MaLoaiTin }, new AjaxOptions
+                                {
+                                    Confirm = "Bạn có chắc muốn xóa",
+                                    OnComplete = "$('#row_" + @item.MaLoaiTin + "').remove()",
+                                    HttpMethod = "Delete"
+                                }, new { @class = "btn btn-danger" })
+                            </td>
+                        </tr>
+                       }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /.container-fluid -->

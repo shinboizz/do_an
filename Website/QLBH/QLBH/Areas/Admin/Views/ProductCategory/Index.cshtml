@@ -1,0 +1,71 @@
+﻿@model List<Model.EF.LoaiSanPham>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Layout/Layout.cshtml";
+}
+
+   <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <h1 class="h3 mb-2 text-gray-800">Loại sản phẩm</h1>
+        <!-- DataTales Example -->
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                
+                <p>
+                    <a class="btn btn-success" href="/Admin/ProductCategory/Create" role="button">Thêm mới</a>
+                </p>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Tên loại sản phẩm</th>
+                                <th>Ngày tạo</th>
+                                <th>Người tạo</th>
+                                <th>Ngày sửa</th>
+                                <th>Người sửa</th>
+                                <th>Ngày sửa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           @foreach (var item in Model)
+                           {
+                            <tr id="row_@item.MaLoaiSP">
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.TenLoaiSP)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NgayTao)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NguoiTao)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NgaySua)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NguoiSua)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Sửa", "Edit", new { id = item.MaLoaiSP }, new { @class = "btn btn-primary" }) |
+                                    @Ajax.ActionLink("Xóa","Delete",new { @id=item.MaLoaiSP},new AjaxOptions
+                               {
+                                   Confirm="Bạn có chắc muốn xóa",
+                                   OnComplete= "$('#row_"+@item.MaLoaiSP+"').remove()",
+                                   HttpMethod="Delete"
+                               }, new { @class = "btn btn-danger" })
+                                </td>
+                            </tr>
+                           }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container-fluid -->

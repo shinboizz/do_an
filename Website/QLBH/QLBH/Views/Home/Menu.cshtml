@@ -1,0 +1,30 @@
+﻿@model List<Model.EF.LoaiSanPham>
+@{
+    Layout = null;
+}
+ <!-- Begin Header Bottom Menu Area -->
+<div class="hb-menu">
+    <nav>
+        <ul>
+            <li>
+                <a href="/Home/Index">Trang chủ</a>
+            </li>
+            <li class="megamenu-static-holder">
+                <a href="/Product/Index">Sản phẩm</a>
+                <ul class="sub-menu hb-dropdown">
+                    @foreach (var item in Model)
+                    {
+                        <li>
+                            <a href="/Product/ProductByCat?idCat=@item.MaLoaiSP">@item.TenLoaiSP</a>
+                        </li>
+                    }
+                </ul>
+            </li>
+            <li><a href="/News/Index">Tin tức</a></li>
+            <li><a>Khuyến mãi</a></li>
+            <li><a href="/Home/About">Giới thiệu</a></li>
+            <li><a href="/Home/Contact">Liên hệ</a></li>
+        </ul>
+    </nav>
+</div>
+<!-- Header Bottom Menu Area End Here -->

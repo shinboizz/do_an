@@ -1,0 +1,132 @@
+﻿@model Model.EF.TinTuc
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Layout/Layout.cshtml";
+}
+
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Sửa Thông tin</h1>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card mb-4">
+            <div class="card-header py-3">
+                Sửa Tin tức
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                       @using (Html.BeginForm())
+                       {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-horizontal">
+                            <h4>TinTuc</h4>
+                            <hr />
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            @Html.HiddenFor(model => model.MaTin)
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.TieuDe, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.TieuDe, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.TieuDe, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.MaLoaiTin, "Loại tin", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                   @Html.DropDownListFor(model => model.MaLoaiTin, null, htmlAttributes: new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.MaLoaiTin, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.MoTa, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.MoTa, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.MoTa, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.NoiDung, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.TextAreaFor(model => model.NoiDung, new { htmlAttributes = new { @class = "form-control" }, id = "txtContent" })
+                                    @Html.ValidationMessageFor(model => model.NoiDung, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Anh, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    <input type="file" id="fileUpload" accept="image/*" name="Anh" style="display:none" />
+                                    <input type="button" id="btnUpload" value="Chọn hình" />
+                                    <img id="pictureUpload" width="300" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Lưu" class="btn btn-primary" />
+                                </div>
+                            </div>
+                        </div>
+                       }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+@section upload
+{
+    <script>
+        var editor = CKEDITOR.replace('txtContent', {
+            customConfig: '~/Content/AdminContent/ckeditor/config.js'
+        });
+        $(function () {
+            //Đăng ký sự kiện click nút btnUpload
+            $('#btnUpload').click(function () {
+                $('#fileUpload').trigger('click');
+            });
+            //Bắt sự kiện change data của fileUpload
+            $('#fileUpload').change(function () {
+                //kiểm tra trình duyệt có hỗ trợ FormData object không
+                if(window.FormData!==undefined)
+                {
+                    //Lấy dữ liệu trên fileUpload
+                    var fileUpload = $('#fileUpload').get(0);
+                    var files = fileUpload.files;
+                    //Tạo đối tượng formdata
+                    var formData = new FormData();
+                    //đưa dữ liệu vào form
+                    formData.append('file', files[0]);
+                    $.ajax({
+                        type: 'POST',
+                        url: '/Admin/News/ProcessUpload',
+                        contentType: false,//không có header
+                        processData: false,//không xử lý dữ liệu
+                        data: formData,
+                        success:function(urlImage)
+                        {
+                            $('#pictureUpload').attr('src', urlImage);
+
+                        },
+                        error:function(err)
+                        {
+                            alert('Có lỗi khi upload',err.statusText)
+                        }
+                    });
+                }
+            })
+        });
+    </script>
+}

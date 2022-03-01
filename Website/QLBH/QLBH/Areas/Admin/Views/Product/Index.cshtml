@@ -1,0 +1,97 @@
+﻿@model PagedList.IPagedList<Model.EF.SanPham>
+@using PagedList.Mvc
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Layout/Layout.cshtml";
+}
+
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <h1 class="h3 mb-2 text-gray-800">Sản phẩm</h1>
+        <!-- DataTales Example -->
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <p>
+                    <a class="btn btn-success" href="/Admin/Product/Create" role="button">Thêm mới</a>   
+                    @*@Html.ActionLink("Thêm mới","Create","",new { @class= "btn btn-success" })*@
+                </p>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Loại sản phẩm</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Số lượng</th>
+                                <th>Đơn giá</th>
+                                <th>Ngày tạo</th>
+                                <th>Người tạo</th>
+                                <th>Ngày sửa</th>
+                                <th>Người sửa</th>
+                                <th style="width:200px;text-align:center;">Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           @foreach (var item in Model)
+                           {
+                            <tr id="row_@item.MaSP">
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.LoaiSanPham.TenLoaiSP)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.TenSP)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.SoLuong)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DonGia)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NgayTao)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NguoiTao)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NgaySua)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NguoiSua)
+                                </td>
+                                <td style="width:200px;text-align:center;">
+                                    @Html.ActionLink("Sửa", "Edit", new { id = item.MaSP },new { @class = "btn btn-primary" }) |
+                                    @Ajax.ActionLink("Xóa", "Delete", new { @id = item.MaSP }, new AjaxOptions
+                               {
+                                   Confirm = "Bạn có chắc muốn xóa",
+                                   OnComplete = "$('#row_" + @item.MaSP + "').remove()",
+                                   HttpMethod = "Delete"
+                               }, new { @class = "btn btn-danger" })
+                                </td>
+                            </tr>
+                           }
+                        </tbody>
+                    </table>
+                    <div class="col-sm-12 col-md-7">
+                        @*<div class="dataTables_paginate paging_simple_numbers">*@
+                            @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions
+                       {
+                           
+                           ContainerDivClasses = new string[] { "dataTables_paginate paging_simple_numbers" },
+                           UlElementClasses = new string[] { "pagination" },
+                                LiElementClasses=new string[] {"paginate_button page-item"}
+
+                       })
+                        @*</div>*@
+                    </div>   
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container-fluid -->
+

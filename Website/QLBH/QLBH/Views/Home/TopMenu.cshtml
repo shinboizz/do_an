@@ -1,0 +1,46 @@
+﻿
+
+@{
+    Layout = null;
+}
+<!-- Begin Header Top Area -->
+<div class="header-top">
+    <div class="container">
+        <div class="row">
+            <!-- Begin Header Top Left Area -->
+            <div class="col-lg-3 col-md-4">
+                <div class="header-top-left">
+                    <ul class="phone-wrap">
+                        <li><span>Số điện thoại:</span><a href="#"> (+84) 379 1076</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Header Top Left Area End Here -->
+            <!-- Begin Header Top Right Area -->
+            <div class="col-lg-9 col-md-8">
+                <div class="header-top-right">
+                    <ul class="ht-menu">
+                        @{ 
+                            var session = (QLBH.Common.UserLogin)Session[QLBH.Common.CommonConstants.USER_SESSION];
+                        }
+                        @if (session==null)
+                        {
+                             <!-- Begin Setting Area -->
+                           
+                            <li><a href="/User/Login">Đăng nhập</a></li>
+                            <li><a href="/User/Register">Đăng ký</a></li>
+                        <!-- Setting Area End Here -->
+                        }
+                        else
+                        {
+                            <li><a>Xin chào:@session.Username</a></li>
+                            <li>@Html.ActionLink("Đăng xuất","Logout","User")</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            <!-- Header Top Right Area End Here -->
+        </div>
+    </div>
+</div>
+<!-- Header Top Area End Here -->

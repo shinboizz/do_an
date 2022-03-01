@@ -1,0 +1,191 @@
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\ApplicationInsights.config
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\csc.exe
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\System.Collections.Immutable.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\System.Reflection.Metadata.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\vbc.exe
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\VBCSCompiler.exe
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\VBCSCompiler.exe.config
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\QLBH.dll.config
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\QLBH.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\QLBH.pdb
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Antlr3.Runtime.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\EntityFramework.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\EntityFramework.SqlServer.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.Agent.Intercept.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.DependencyCollector.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.Web.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.WindowsServer.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.ApplicationInsights.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AspNet.Identity.Core.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.Cookies.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.Facebook.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.Google.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.OAuth.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.Twitter.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Web.Infrastructure.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Newtonsoft.Json.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Owin.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.Helpers.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.Mvc.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.Optimization.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.Razor.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.WebPages.Deployment.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.WebPages.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.WebPages.Razor.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\WebGrease.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.DependencyCollector.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.Web.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.WindowsServer.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.ApplicationInsights.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.Helpers.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.Mvc.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.Optimization.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.Razor.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.WebPages.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.WebPages.Deployment.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.WebPages.Razor.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Antlr3.Runtime.pdb
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Newtonsoft.Json.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\EntityFramework.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\EntityFramework.SqlServer.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AspNet.Identity.Core.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.Facebook.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.Cookies.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.OAuth.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.Google.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.Twitter.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\obj\Debug\QLBH.csprojResolveAssemblyReference.cache
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\obj\Debug\QLBH.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\obj\Debug\QLBH.pdb
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Model.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Model.pdb
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\PagedList.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\PagedList.Mvc.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\PagedList.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\PagedList.Mvc.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\BotDetect.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\BotDetect.Web.UI.Mvc.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Data.SQLite.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Data.SQLite.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Common.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\QLBH\bin\Common.pdb
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\ApplicationInsights.config
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\csc.exe
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\System.Collections.Immutable.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\System.Reflection.Metadata.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\vbc.exe
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\VBCSCompiler.exe
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\roslyn\VBCSCompiler.exe.config
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\QLBH.dll.config
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\QLBH.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\QLBH.pdb
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Antlr3.Runtime.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\BotDetect.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\BotDetect.Web.UI.Mvc.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\EntityFramework.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\EntityFramework.SqlServer.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.DependencyCollector.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.Web.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.WindowsServer.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.ApplicationInsights.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.Google.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Web.Infrastructure.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Model.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Newtonsoft.Json.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Owin.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\PagedList.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\PagedList.Mvc.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Data.SQLite.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.Helpers.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.Mvc.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.Optimization.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.Razor.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.WebPages.Deployment.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.WebPages.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.WebPages.Razor.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\WebGrease.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Common.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Model.pdb
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Model.dll.config
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.DependencyCollector.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.Web.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AI.WindowsServer.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.ApplicationInsights.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\PagedList.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\PagedList.Mvc.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Data.SQLite.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.Helpers.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.Mvc.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.Optimization.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.Razor.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.WebPages.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.WebPages.Deployment.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\System.Web.WebPages.Razor.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Antlr3.Runtime.pdb
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Newtonsoft.Json.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\EntityFramework.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\EntityFramework.SqlServer.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.Google.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\bin\Common.pdb
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\obj\Debug\QLBH.csprojAssemblyReference.cache
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\obj\Debug\QLBH.csproj.CoreCompileInputs.cache
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\obj\Debug\QLBH.csproj.CopyComplete
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\obj\Debug\QLBH.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\QLBH\obj\Debug\QLBH.pdb

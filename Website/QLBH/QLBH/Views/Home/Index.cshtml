@@ -1,0 +1,147 @@
+﻿@model List<Model.EF.Slide>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/Layout.cshtml";
+}
+
+<!-- Begin Slider With Banner Area -->
+<div class="slider-with-banner">
+    <div class="container">
+        <div class="row">
+            <!-- Begin Slider Area -->
+            <div class="col-lg-8 col-md-8">
+                <div class="slider-area pt-sm-30 pt-xs-30">
+                    <div class="slider-active owl-carousel">
+                        @foreach (var slide in Model)
+                        {
+                            <!-- Begin Single Slide Area -->
+                            <div class="single-slide align-center-left animation-style-01 bg-1">
+                                <img src="~/Content/CustomerContent/images/slider/@slide.Anh" />
+                                <div class="slider-progress"></div>
+                                <div class="slider-content">
+                                    <h5>Sale Offer <span>-20% Off</span> This Week</h5>
+                                    <h2>Chamcham Galaxy S9 | S9+</h2>
+                                    <h3>Starting at <span>$1209.00</span></h3>
+                                    <div class="default-btn slide-btn">
+                                        <a class="links" href="shop-left-sidebar.html">Shopping Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- Single Slide Area End Here -->
+                        }
+                    </div>
+                </div>
+            </div>
+            <!-- Slider Area End Here -->
+            <!-- Begin Li Banner Area -->
+            <div class="col-lg-4 col-md-4 text-center pt-sm-30 pt-xs-30">
+                <div class="li-banner">
+                    <a href="#">
+                        <img src="~/Content/CustomerContent/images/banner/1_1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="li-banner">
+                    <a href="#">
+                        <img src="~/Content/CustomerContent/images/banner/1_2.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- Li Banner Area End Here -->
+        </div>
+    </div>
+</div>
+<!-- Slider With Banner Area End Here -->
+<!-- Begin Static Top Area -->
+<div class="static-top-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="static-top-content mt-sm-30">
+                    Gift Special: Gift every single day on Weekends - New Coupon code "
+                    <span>LimupaSaleoff</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Static Top Area End Here -->
+<!-- product-area start -->
+<div class="product-area pt-55 pb-25 pt-xs-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="li-product-tab">
+                    <ul class="nav li-product-menu">
+                        <li><a class="active" data-toggle="tab" href="#li-new-product"><span>Sản phẩm mới</span></a></li>
+                        <li><a data-toggle="tab" href="#li-bestseller-product"><span>Sản phẩm bán chạy</span></a></li>
+                        <li><a data-toggle="tab" href="#li-featured-product"><span>Sản phẩm nổi bật</span></a></li>
+                    </ul>
+                </div>
+                <!-- Begin Li's Tab Menu Content Area -->
+            </div>
+        </div>
+        <div class="tab-content">
+            @*Sản phẩm mới*@
+           @Html.Action("NewsProduct", "Home", new { @status=1})
+            @*Sản phẩm bán chạy*@
+           @Html.Action("BestSeller", "Home", new { @status = 2 })
+           @*Sản phẩm nổi bật*@
+            @Html.Action("Featured", "Home", new { @status = 3 })
+        </div>
+    </div>
+</div>
+<!-- product-area end -->
+<!-- Begin Li's Static Banner Area -->
+<div class="li-static-banner li-static-banner-4 text-center pt-20">
+    <div class="container">
+        <div class="row">
+            <!-- Begin Single Banner Area -->
+            <div class="col-lg-6">
+                <div class="single-banner pb-sm-30 pb-xs-30">
+                    <a href="#">
+                        <img src="~/Content/CustomerContent/images/banner/2_3.jpg" alt="Li's Static Banner">
+                    </a>
+                </div>
+            </div>
+            <!-- Single Banner Area End Here -->
+            <!-- Begin Single Banner Area -->
+            <div class="col-lg-6">
+                <div class="single-banner">
+                    <a href="#">
+                        <img src="~/Content/CustomerContent/images/banner/2_4.jpg" alt="Li's Static Banner">
+                    </a>
+                </div>
+            </div>
+            <!-- Single Banner Area End Here -->
+        </div>
+    </div>
+</div>
+<!-- Li's Static Banner Area End Here -->
+<!-- Begin Li's Static Home Area -->
+<div class="li-static-home">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Begin Li's Static Home Image Area -->
+                <div class="li-static-home-image"></div>
+                <!-- Li's Static Home Image Area End Here -->
+                <!-- Begin Li's Static Home Content Area -->
+                <div class="li-static-home-content">
+                    <p>Sale Offer<span>-20% Off</span>This Week</p>
+                    <h2>Featured Product</h2>
+                    <h2>Sanai Accessories 2018</h2>
+                    <p class="schedule">
+                        Starting at
+                        <span> $1209.00</span>
+                    </p>
+                    <div class="default-btn">
+                        <a href="shop-left-sidebar.html" class="links">Shopping Now</a>
+                    </div>
+                </div>
+                <!-- Li's Static Home Content Area End Here -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Li's Static Home Area End Here -->
+

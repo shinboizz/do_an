@@ -1,0 +1,299 @@
+﻿@model List<Model.EF.SanPham>
+@{
+    ViewBag.Title = "ProductByCat";
+    Layout = "~/Views/Layout/Layout.cshtml";
+}
+
+ <!-- Begin Li's Breadcrumb Area -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="breadcrumb-content">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li class="active">Sản phẩm</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Li's Breadcrumb Area End Here -->
+<!-- Begin Li's Content Wraper Area -->
+<div class="content-wraper pt-60 pb-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 order-2 order-lg-1">
+                <!-- Begin Li's Banner Area -->
+                <div class="single-banner shop-page-banner">
+                    <a href="#">
+                        <img src="~/Content/CustomerContent/images/bg-banner/2.jpg" alt="Li's Static Banner">
+                    </a>
+                </div>
+                <!-- Li's Banner Area End Here -->
+                <!-- shop-top-bar start -->
+                <div class="shop-top-bar mt-30">
+                    <div class="shop-bar-inner">
+                        <div class="product-view-mode">
+                            <!-- shop-item-filter-list start -->
+                            <ul class="nav shop-item-filter-list" role="tablist">
+                                <li role="presentation"><a data-toggle="tab" role="tab" aria-controls="grid-view" href="#grid-view"><i class="fa fa-th"></i></a></li>
+                                <li class="active" role="presentation"><a aria-selected="true" class="active show" data-toggle="tab" role="tab" aria-controls="list-view" href="#list-view"><i class="fa fa-th-list"></i></a></li>
+                            </ul>
+                            <!-- shop-item-filter-list end -->
+                        </div>
+                        <div class="toolbar-amount">
+                            <span>Hiển thị từ 1 đến 9 trong tổng số 15 sản phẩm</span>
+                        </div>
+                    </div>
+                    <!-- product-select-box start -->
+                    <div class="product-select-box">
+                        <div class="product-short">
+                            <p>Sắp xếp theo:</p>
+                            <select class="nice-select">
+                                <option value="trending">Mức độ liên quan</option>
+                                <option value="sales">Tên (A - Z)</option>
+                                <option value="rating">Giá (Thấp &gt; Cao)</option>
+                                <option value="date">Đánh giá (Thấp nhất)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- product-select-box end -->
+                </div>
+                <!-- shop-top-bar end -->
+                <!-- shop-products-wrapper start -->
+                <div class="shop-products-wrapper">
+                    <div class="tab-content">
+                        <div id="grid-view" class="tab-pane fade" role="tabpanel">
+                            <div class="product-area shop-product-area">
+                                <div class="row">
+                                    @foreach (var item in Model)
+                                    {
+                                        <div class="col-lg-4 col-md-4 col-sm-6 mt-40">
+                                            <!-- single-product-wrap start -->
+                                            <div class="single-product-wrap">
+                                                <div class="product-image">
+                                                    <a href="/Product/Detail?id=@item.MaSP">
+                                                        <img src="~/Content/CustomerContent/images/product/large-size/@item.Anh" alt="Li's Product Image">
+                                                    </a>
+                                                    <span class="sticker">Mới</span>
+                                                </div>
+                                                <div class="product_desc">
+                                                    <div class="product_desc_info">
+                                                        <div class="product-review">
+                                                            <div class="rating-box">
+                                                                <ul class="rating">
+                                                                    <li><i class="fa fa-star-o"></i></li>
+                                                                    <li><i class="fa fa-star-o"></i></li>
+                                                                    <li><i class="fa fa-star-o"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <h4><a class="product_name" href="/Product/Detail?id=@item.MaSP">@item.TenSP</a></h4>
+                                                        <div class="price-box">
+                                                            <span class="new-price">@item.DonGia VNĐ</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="add-actions">
+                                                        <ul class="add-actions-link">
+                                                            <li class="add-cart active"><a href="/Cart/AddItem?productID=@item.MaSP&quantity=1">Thêm vào giỏ</a></li>
+                                                            <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                            <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- single-product-wrap end -->
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <div id="list-view" class="tab-pane fade product-list-view active show" role="tabpanel">
+                            <div class="row">
+                                <div class="col">
+                                    @foreach (var item in Model)
+                                    {
+                                        <div class="row product-layout-list">
+                                            <div class="col-lg-3 col-md-5 ">
+                                                <div class="product-image">
+                                                    <a href="/Product/Detail?id=@item.MaSP">
+                                                        <img src="~/Content/CustomerContent/images/product/large-size/@item.Anh" alt="Li's Product Image">
+                                                    </a>
+                                                    <span class="sticker">Mới</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 col-md-7">
+                                                <div class="product_desc">
+                                                    <div class="product_desc_info">
+                                                        <div class="product-review">
+                                                            <div class="rating-box">
+                                                                <ul class="rating">
+                                                                    <li><i class="fa fa-star-o"></i></li>
+                                                                    <li><i class="fa fa-star-o"></i></li>
+                                                                    <li><i class="fa fa-star-o"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <h4><a class="product_name" href="/Product/Detail?id=@item.MaSP">@item.TenSP</a></h4>
+                                                        <div class="price-box">
+                                                            <span class="new-price">@item.DonGia VNĐ</span>
+                                                        </div>
+                                                        <p>@item.MoTa</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="shop-add-action mb-xs-30">
+                                                    <ul class="add-actions-link">
+                                                        <li class="add-cart"><a href="/Cart/AddItem?productID=@item.MaSP&quantity=1">Thêm vào giỏ</a></li>
+                                                        <li class="wishlist"><a href="wishlist.html"><i class="fa fa-heart-o"></i>Thêm vào danh sách yêu thích</a></li>
+                                                        <li><a class="quick-view" data-toggle="modal" data-target="#exampleModalCenter" href="#"><i class="fa fa-eye"></i>Quick view</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="paginatoin-area">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <p>Hiển thị 1-12 trên 13 sản phẩm</p>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <ul class="pagination-box">
+                                        <li>
+                                            <a href="#" class="Previous"><i class="fa fa-chevron-left"></i> Previous</a>
+                                        </li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li>
+                                            <a href="#" class="Next"> Next <i class="fa fa-chevron-right"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- shop-products-wrapper end -->
+            </div>
+            <div class="col-lg-3 order-1 order-lg-2">
+                <!--sidebar-categores-box start  -->
+                <div class="sidebar-categores-box mt-sm-30 mt-xs-30">
+                    <div class="sidebar-title">
+                        <h2>Danh mục sản phâm</h2>
+                    </div>
+                    <!-- category-sub-menu start -->
+                    <div class="category-sub-menu">
+                        <ul>
+                            <li class="has-sub">
+                                <a href="# ">Laptop</a>
+                                <ul>
+                                    <li><a href="#">Laptop 1</a></li>
+                                    <li><a href="#">Laptop 2</a></li>
+                                    <li><a href="#">Laptop 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                <a href="#">Máy tính</a>
+                                <ul>
+                                    <li><a href="#">Máy tính 1</a></li>
+                                    <li><a href="#">Máy tính 2</a></li>
+                                    <li><a href="#">Máy tính 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                <a href="#">Bàn phím</a>
+                                <ul>
+                                    <li><a href="#">Bàn phím 1</a></li>
+                                    <li><a href="#">Bàn phím 2</a></li>
+                                    <li><a href="#">Bàn phím 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- category-sub-menu end -->
+                </div>
+                <!--sidebar-categores-box end  -->
+                <!--sidebar-categores-box start  -->
+                <div class="sidebar-categores-box">
+                    <div class="sidebar-title">
+                        <h2>Sắp xếp theo</h2>
+                    </div>
+                    <!-- btn-clear-all start -->
+                    <button class="btn-clear-all mb-sm-30 mb-xs-30">Clear all</button>
+                    <!-- btn-clear-all end -->
+                    <!-- filter-sub-area start -->
+                    <div class="filter-sub-area">
+                        <h5 class="filter-sub-titel">Nhãn hiệu</h5>
+                        <div class="categori-checkbox">
+                            <form action="#">
+                                <ul>
+                                    <li><input type="checkbox" name="product-categori"><a href="#">Prime Video (13)</a></li>
+                                    <li><input type="checkbox" name="product-categori"><a href="#">Computers (12)</a></li>
+                                    <li><input type="checkbox" name="product-categori"><a href="#">Electronics (11)</a></li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- filter-sub-area end -->
+                    <!-- filter-sub-area start -->
+                    <div class="filter-sub-area pt-sm-10 pt-xs-10">
+                        <h5 class="filter-sub-titel">Loại sản phẩm</h5>
+                        <div class="categori-checkbox">
+                            <form action="#">
+                                <ul>
+                                    <li><input type="checkbox" name="product-categori"><a href="#">Bàn phím</a></li>
+                                    <li><input type="checkbox" name="product-categori"><a href="#"> Chuột</a></li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- filter-sub-area end -->
+                    <!-- filter-sub-area start -->
+                    <div class="filter-sub-area pt-sm-10 pt-xs-10">
+                        <h5 class="filter-sub-titel">Màu</h5>
+                        <div class="color-categoriy">
+                            <form action="#">
+                                <ul>
+                                    <li><span class="white"></span><a href="#">Trắng (1)</a></li>
+                                    <li><span class="black"></span><a href="#">Đen (1)</a></li>
+                                    <li><span class="Orange"></span><a href="#">Cam (3) </a></li>
+                                    <li><span class="Blue"></span><a href="#">Biển  (2) </a></li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- filter-sub-area end -->
+                </div>
+                <!--sidebar-categores-box end  -->
+                <!-- category-sub-menu start -->
+                <div class="sidebar-categores-box mb-sm-0">
+                    <div class="sidebar-title">
+                        <h2>Sản phẩm</h2>
+                    </div>
+                    <div class="category-tags">
+                        <ul>
+                            <li><a href="# ">Bàn phím</a></li>
+                            <li><a href="# ">Chuột</a></li>
+                            <li><a href="# ">Tai nghe</a></li>
+                            <li><a href="# ">Máy tính</a></li>
+                            <li><a href="# ">Laptop</a></li>
+                        </ul>
+                    </div>
+                    <!-- category-sub-menu end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Content Wraper Area End Here -->
+
+

@@ -1,0 +1,115 @@
+﻿@model List<Model.EF.TinTuc>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/Layout.cshtml";
+}
+
+ <!-- Begin Li's Breadcrumb Area -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="breadcrumb-content">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li class="active">Tin tức</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Li's Breadcrumb Area End Here -->
+<!-- Begin Li's Main Blog Page Area -->
+<div class="li-main-blog-page pt-60 pb-55">
+    <div class="container">
+        <div class="row">
+            <!-- Begin Li's Main Content Area -->
+            <div class="col-lg-9 order-lg-1 order-1">
+                <div class="row li-main-content">
+                    @foreach (var news in Model)
+                    {
+                        <div class="col-lg-12">
+                            <div class="li-blog-single-item mb-30">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="li-blog-banner">
+                                            <a href="/News/Detail?id=@news.MaTin"><img class="img-full" src="~/Content/CustomerContent/images/blog-banner/@news.Anh" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="li-blog-content">
+                                            <div class="li-blog-details">
+                                                <h3 class="li-blog-heading pt-xs-25 pt-sm-25"><a href="/News/Detail?id=@news.MaTin">@news.TieuDe</a></h3>
+                                                <div class="li-blog-meta">
+                                                    <a class="author" href="#"><i class="fa fa-user"></i>Admin</a>
+                                                    <a class="comment" href="#"><i class="fa fa-comment-o"></i> 3 comment</a>
+                                                    <a class="post-time" href="#"><i class="fa fa-calendar"></i> 25 nov 2018</a>
+                                                </div>
+                                                <p>@news.MoTa</p>
+                                                <a class="read-more" href="/News/Detail?id=@news.MaTin">Đọc thêm...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    
+                    <!-- Begin Li's Pagination Area -->
+                    <div class="col-lg-12">
+                        <div class="li-paginatoin-area text-center pt-25">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <ul class="li-pagination-box">
+                                        <li><a class="Previous" href="#">Previous</a></li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a class="Next" href="#">Next</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Li's Pagination End Here Area -->
+                </div>
+            </div>
+            <!-- Li's Main Content Area End Here -->
+            <!-- Begin Li's Blog Sidebar Area -->
+            <div class="col-lg-3 order-2 order-lg-2">
+                <!--sidebar-categores-box start  -->
+                <div class="sidebar-categores-box mt-sm-30 mt-xs-30">
+                    <div class="sidebar-title">
+                        <h2>Danh mục tin tức</h2>
+                    </div>
+                    <!-- category-sub-menu start -->
+                    <div class="category-sub-menu">
+                        <ul>
+                            <li>
+                                <a href="# ">Tin Công nghệ</a>
+                            </li>
+                            <li>
+                                <a href="# ">Tin Game</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- category-sub-menu end -->
+                </div>
+                <!--sidebar-categores-box end  -->
+                <!-- category-sub-menu start -->
+                <div class="sidebar-categores-box mb-sm-0">
+                    <div class="sidebar-title">
+                        <h2>Tin tức</h2>
+                    </div>
+                    <div class="category-tags">
+                        <ul>
+                            <li><a href="# ">Tin Công Nghệ</a></li>
+                            <li><a href="# ">Tin Game</a></li>
+                        </ul>
+                    </div>
+                    <!-- category-sub-menu end -->
+                </div>
+            </div>
+            <!-- Li's Blog Sidebar Area End Here -->
+        </div>
+    </div>
+</div>
+<!-- Li's Main Blog Page Area End Here -->
+

@@ -1,0 +1,371 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<!-- index-431:41-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Welcome Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/Content/CustomerContent/images/favicon.png">
+    <!-- Material Design Iconic Font-V2.2.0 -->
+    <link href="~/Content/CustomerContent/css/material-design-iconic-font.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="~/Content/CustomerContent/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Font Awesome Stars-->
+    <link href="~/Content/CustomerContent/css/fontawesome-stars.css" rel="stylesheet" />
+    <!-- Meanmenu CSS -->
+    <link href="~/Content/CustomerContent/css/meanmenu.css" rel="stylesheet" />
+    <!-- owl carousel CSS -->
+    <link href="~/Content/CustomerContent/css/owl.carousel.min.css" rel="stylesheet" />
+    <!-- Slick Carousel CSS -->
+    <link href="~/Content/CustomerContent/css/slick.css" rel="stylesheet" />
+    <!-- Animate CSS -->
+    <link href="~/Content/CustomerContent/css/animate.css" rel="stylesheet" />
+    <!-- Jquery-ui CSS -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    @*<link href="~/Content/CustomerContent/css/jquery-ui.min.css" rel="stylesheet" />*@
+    <!-- Venobox CSS -->
+    <link href="~/Content/CustomerContent/css/venobox.css" rel="stylesheet" />
+    <!-- Nice Select CSS -->
+    <link href="~/Content/CustomerContent/css/nice-select.css" rel="stylesheet" />
+    <!-- Magnific Popup CSS -->
+    <link href="~/Content/CustomerContent/css/magnific-popup.css" rel="stylesheet" />
+    <!-- Bootstrap V4.1.3 Fremwork CSS -->
+    <link href="~/Content/CustomerContent/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Helper CSS -->
+    <link href="~/Content/CustomerContent/css/helper.css" rel="stylesheet" />
+    <!-- Main Style CSS -->
+    <link href="~/Content/CustomerContent/css/style.css" rel="stylesheet" />
+    <!-- Responsive CSS -->
+    <link href="~/Content/CustomerContent/css/responsive.css" rel="stylesheet" />
+    <!-- Modernizr js -->
+    <script src="~/Content/CustomerContent/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Begin Body Wrapper -->
+    <div class="body-wrapper">
+        <!-- Begin Header Area -->
+        <header class="li-header-4">
+            @Html.Action("TopMenu", "Home")
+            <!-- Begin Header Middle Area -->
+            <div class="header-middle pl-sm-0 pr-sm-0 pl-xs-0 pr-xs-0">
+                <div class="container">
+                    <div class="row">
+                        <!-- Begin Header Logo Area -->
+                        <div class="col-lg-3">
+                            <div class="logo pb-sm-30 pb-xs-30">
+                                <a href="/Home/Index">
+                                    <img src="~/Content/CustomerContent/images/menu/logo/logo123.jpg" style="width:188px;height:70px;" />
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Header Logo Area End Here -->
+                        <!-- Begin Header Middle Right Area --> 
+                        <div class="col-lg-9 pl-0 ml-sm-15 ml-xs-15">
+                            <!-- Begin Header Middle Searchbox Area -->
+                            <form action="/Product/Search" method="get" class="hm-searchbox">
+                                <select class="nice-select select-search-category">
+                                    <option value="0">Tất cả</option>
+                                    <option value="1">Laptops</option>
+                                    <option value="2">Máy tính</option>
+                                    <option value="3">Bàn phím</option>
+                                    <option value="4">Chuột</option>
+                                    <option value="5">Tai nghe</option>
+                                    <option value="6">Loa</option>
+                                </select>
+                                <input id="txtKeyword" type="text" name="keyword" placeholder="Nhập từ khóa cần tìm ...">
+                                <button class="li-btn" type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                            <!-- Header Middle Searchbox Area End Here -->
+                            <!-- Begin Header Middle Right Area -->
+                            <div class="header-middle-right">
+                                <ul class="hm-menu">
+                                    <!-- Begin Header Middle Wishlist Area -->
+                                    <li class="hm-wishlist">
+                                        <a href="wishlist.html">
+                                            <span class="cart-item-count wishlist-item-count">0</span>
+                                            <i class="fa fa-heart-o"></i>
+                                        </a>
+                                    </li>
+                                    <!-- Header Middle Wishlist Area End Here -->
+                                   
+                                   @{Html.RenderAction("HeaderCart", "Home");}
+
+                                </ul>
+                            </div>
+                            <!-- Header Middle Right Area End Here -->
+                        </div>
+                        <!-- Header Middle Right Area End Here -->
+                    </div>
+                </div>
+            </div>
+            <!-- Header Middle Area End Here -->
+            <!-- Begin Header Bottom Area -->
+            <div class="header-bottom header-sticky stick d-none d-lg-block d-xl-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                           @*Đây là menu*@
+                            @Html.Action("Menu","Home")
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Bottom Area End Here -->
+            <!-- Begin Mobile Menu Area -->
+            <div class="mobile-menu-area mobile-menu-area-4 d-lg-none d-xl-none col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="mobile-menu">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu Area End Here -->
+        </header>
+        <!-- Header Area End Here -->
+        @RenderBody()
+        <!-- Begin Footer Area -->
+        <div class="footer">
+            <!-- Begin Footer Static Top Area -->
+            <div class="footer-static-top">
+                <div class="container">
+                    <!-- Begin Footer Shipping Area -->
+                    <div class="footer-shipping pt-60 pb-25">
+                        <div class="row">
+                            <!-- Begin Li's Shipping Inner Box Area -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 pb-sm-55 pb-xs-55">
+                                <div class="li-shipping-inner-box">
+                                    <div class="shipping-icon">
+                                        <img src="~/Content/CustomerContent/images/shipping-icon/1.png" />
+                                    </div>
+                                    <div class="shipping-text">
+                                        <h2>Miễn phí vận chuyển</h2>
+                                        <p>Miễn phí vận chuyển Và đổi trả.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Li's Shipping Inner Box Area End Here -->
+                            <!-- Begin Li's Shipping Inner Box Area -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 pb-sm-55 pb-xs-55">
+                                <div class="li-shipping-inner-box">
+                                    <div class="shipping-icon">
+                                        <img src="~/Content/CustomerContent/images/shipping-icon/2.png" />
+                                    </div>
+                                    <div class="shipping-text">
+                                        <h2>Hình thức thanh toán</h2>
+                                        <p>Nhiều hình thức thanh toán.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Li's Shipping Inner Box Area End Here -->
+                            <!-- Begin Li's Shipping Inner Box Area -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 pb-xs-30">
+                                <div class="li-shipping-inner-box">
+                                    <div class="shipping-icon">
+                                        <img src="~/Content/CustomerContent/images/shipping-icon/3.png" />
+                                    </div>
+                                    <div class="shipping-text">
+                                        <h2>Mua sắm an toàn</h2>
+                                        <p>Bảo vệ quyền lợi người mua hàng.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Li's Shipping Inner Box Area End Here -->
+                            <!-- Begin Li's Shipping Inner Box Area -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 pb-xs-30">
+                                <div class="li-shipping-inner-box">
+                                    <div class="shipping-icon">
+                                        <img src="~/Content/CustomerContent/images/shipping-icon/4.png" />     
+                                    </div>
+                                    <div class="shipping-text">
+                                        <h2>Trợ giúp 24/7</h2>
+                                        <p>Cần trợ giúp? Gọi hoặc trò chuyện trực tuyến với nhân viên.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Li's Shipping Inner Box Area End Here -->
+                        </div>
+                    </div>
+                    <!-- Footer Shipping Area End Here -->
+                </div>
+            </div>
+            <!-- Footer Static Top Area End Here -->
+            <!-- Begin Footer Static Middle Area -->
+            <div class="footer-static-middle">
+                <div class="container">
+                    <div class="footer-logo-wrap pt-50 pb-35">
+                        <div class="row">
+                            <!-- Begin Footer Logo Area -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="footer-logo">
+                                    <img src="~/Content/CustomerContent/images/menu/logo/logo123.jpg" style="width:188px;height:70px;" />
+                                    <p class="info">
+                                        Đây là thông tin
+                                    </p>
+                                </div>
+                                <ul class="des">
+                                    <li>
+                                        <span>Địa chỉ: </span>
+                                        2602/2000 tổ 6, ấp Long Khánh 1, phường Tam Phước , tp.Biên Hòa, tỉnh Đồng Nai
+                                    </li>
+                                    <li>
+                                        <span>Phone: </span>
+                                        <a href="#">(+84)392 391 441</a>
+                                    </li>
+                                    <li>
+                                        <span>Email: </span>
+                                        <a href="mailto://phuquangle5@gmail.com">phuquangle5@gmail.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Footer Logo Area End Here -->
+                            <!-- Begin Footer Block Area -->
+                            <div class="col-lg-2 col-md-3 col-sm-6">
+                                <div class="footer-block">
+                                    <h3 class="footer-block-title">Sản phẩm</h3>
+                                    <ul>
+                                        <li><a href="#">Sản phẩm mới</a></li>
+                                        <li><a href="#">Sản phẩm bán chạy</a></li>
+                                        <li><a href="#">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Footer Block Area End Here -->
+                            <!-- Begin Footer Block Area -->
+                            <div class="col-lg-2 col-md-3 col-sm-6">
+                                <div class="footer-block">
+                                    <h3 class="footer-block-title">Thông tin</h3>
+                                    <ul>
+                                        <li><a href="#">Vận chuyển</a></li>
+                                        <li><a href="#">Giới thiệu</a></li>
+                                        <li><a href="#">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Footer Block Area End Here -->
+                            <!-- Begin Footer Block Area -->
+                            <div class="col-lg-4">
+                                <div class="footer-block">
+                                    <h3 class="footer-block-title">Liên hệ</h3>
+                                    <ul class="social-link">
+                                        <li class="google-plus">
+                                            <a href="https://www.plus.google.com/discover" data-toggle="tooltip" target="_blank" title="Google +">
+                                                <i class="fa fa-google-plus"></i>
+                                            </a>
+                                        </li>
+                                        <li class="facebook">
+                                            <a href="https://www.facebook.com/" data-toggle="tooltip" target="_blank" title="Facebook">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="youtube">
+                                            <a href="https://www.youtube.com/" data-toggle="tooltip" target="_blank" title="Youtube">
+                                                <i class="fa fa-youtube"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Begin Footer Newsletter Area -->
+                                <div class="footer-newsletter">
+                                    <h4>Đăng ký nhận tin mới</h4>
+                                    <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="footer-subscribe-form validate" target="_blank" novalidate>
+                                        <div id="mc_embed_signup_scroll">
+                                            <div id="mc-form" class="mc-form subscribe-form form-group">
+                                                <input id="mc-email" type="email" autocomplete="off" placeholder="Nhập địa chỉ email của bạn" />
+                                                <button class="btn" id="mc-submit">Đăng ký</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Footer Newsletter Area End Here -->
+                            </div>
+                            <!-- Footer Block Area End Here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Static Middle Area End Here -->
+            <!-- Begin Footer Static Bottom Area -->
+            <div class="footer-static-bottom pt-55 pb-55">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Begin Footer Payment Area -->
+                            <div class="copyright text-center">
+                                <a href="#">
+                                    <img src="images/payment/1.png" alt="">
+                                </a>
+                            </div>
+                            <!-- Footer Payment Area End Here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Static Bottom Area End Here -->
+        </div>
+        <!-- Footer Area End Here -->
+    </div>
+    <!-- Body Wrapper End Here -->
+    <!-- jQuery-V1.12.4 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    @*<script src="~/Content/CustomerContent/js/vendor/jquery-1.12.4.min.js"></script>*@
+    <!-- Popper js -->
+    <script src="~/Content/CustomerContent/js/vendor/popper.min.js"></script>
+    <!-- Bootstrap V4.1.3 Fremwork js -->
+    <script src="~/Content/CustomerContent/js/bootstrap.min.js"></script>
+    <!-- Ajax Mail js -->
+    <script src="~/Content/CustomerContent/js/ajax-mail.js"></script>
+    <!-- Meanmenu js -->
+    <script src="~/Content/CustomerContent/js/jquery.meanmenu.min.js"></script>
+    <!-- Wow.min js -->
+    <script src="~/Content/CustomerContent/js/wow.min.js"></script>
+    <!-- Slick Carousel js -->
+    <script src="~/Content/CustomerContent/js/slick.min.js"></script>
+    <!-- Owl Carousel-2 js -->
+    <script src="~/Content/CustomerContent/js/owl.carousel.min.js"></script>
+    <!-- Magnific popup js -->
+    <script src="~/Content/CustomerContent/js/jquery.magnific-popup.min.js"></script>
+    <!-- Isotope js -->
+    <script src="~/Content/CustomerContent/js/isotope.pkgd.min.js"></script>
+    <!-- Imagesloaded js -->
+    <script src="~/Content/CustomerContent/js/imagesloaded.pkgd.min.js"></script>
+    <!-- Mixitup js -->
+    <script src="~/Content/CustomerContent/js/jquery.mixitup.min.js"></script>
+    <!-- Countdown -->
+    <script src="~/Content/CustomerContent/js/jquery.countdown.min.js"></script>
+    <!-- Counterup -->
+    <script src="~/Content/CustomerContent/js/jquery.counterup.min.js"></script>
+    <!-- Waypoints -->
+    <script src="~/Content/CustomerContent/js/waypoints.min.js"></script>
+    <!-- Barrating -->
+    <script src="~/Content/CustomerContent/js/jquery.barrating.min.js"></script>
+    <!-- Jquery-ui -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    @*<script src="~/Content/CustomerContent/js/jquery-ui.min.js"></script>*@
+    <!-- Venobox -->
+    <script src="~/Content/CustomerContent/js/venobox.min.js"></script>
+    <!-- Nice Select js -->
+    <script src="~/Content/CustomerContent/js/jquery.nice-select.min.js"></script>
+    <!-- ScrollUp js -->
+    <script src="~/Content/CustomerContent/js/scrollUp.min.js"></script>
+    <!-- Main/Activator js -->
+    <script src="~/Content/CustomerContent/js/main.js"></script>
+
+    <script src="~/Content/CustomerContent/js/controller/baseController.js"></script>
+    @RenderSection("jsFooter", required: false)
+</body>
+
+<!-- index-431:47-->
+</html>

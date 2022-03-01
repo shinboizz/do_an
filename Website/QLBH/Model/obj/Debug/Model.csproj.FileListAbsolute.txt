@@ -1,0 +1,34 @@
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\Model\bin\Debug\Model.dll.config
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\Model\bin\Debug\Model.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\Model\bin\Debug\Model.pdb
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\Model\bin\Debug\EntityFramework.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\Model\bin\Debug\EntityFramework.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\Model\obj\Debug\Model.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\Model\obj\Debug\Model.pdb
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\Model\bin\Debug\PagedList.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\Model\bin\Debug\PagedList.Mvc.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\Model\bin\Debug\PagedList.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\Model\bin\Debug\PagedList.Mvc.xml
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\Model\bin\Debug\Common.dll
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\Model\bin\Debug\Common.pdb
+D:\file save visual studio\Website Quản lý bán hàng\QLBH\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\Model\bin\Debug\Model.dll.config
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\Model\bin\Debug\Model.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\Model\bin\Debug\Model.pdb
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\Model\bin\Debug\Common.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\Model\bin\Debug\EntityFramework.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\Model\bin\Debug\PagedList.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\Model\bin\Debug\PagedList.Mvc.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\Model\bin\Debug\Common.pdb
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\Model\bin\Debug\EntityFramework.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\Model\bin\Debug\PagedList.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\Model\bin\Debug\PagedList.Mvc.xml
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\Model\obj\Debug\Model.csprojAssemblyReference.cache
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\Model\obj\Debug\Model.csproj.CopyComplete
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\Model\obj\Debug\Model.dll
+E:\Đồ án chuyên nghành\Đồ án web\Website Quản lý bán hàng\QLBH\Model\obj\Debug\Model.pdb

@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Model.EF.GioiThieu>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Layout/Layout.cshtml";
+}
+
+
+  <!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Giới thiệu</h1>
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <p>
+                <a class="btn btn-success" href="/Admin/About/Create" role="button">Thêm mới</a>
+            </p>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.TieuDe)
+                            </th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       @foreach (var item in Model)
+                       {
+                        <tr id="row_@item.ID">
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TieuDe)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Sửa", "Edit", new { id = item.ID }, new { @class = "btn btn-primary" }) |
+                                @Ajax.ActionLink("Xóa", "Delete", new { @id = item.ID }, new AjaxOptions
+                           {
+                               Confirm = "Bạn có chắc muốn xóa",
+                               OnComplete = "$('#row_" + @item.ID + "').remove()",
+                               HttpMethod = "Delete"
+                           }, new { @class = "btn btn-danger" })
+                            </td>
+                        </tr>
+                       }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /.container-fluid -->
